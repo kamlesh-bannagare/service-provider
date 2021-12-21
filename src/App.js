@@ -40,13 +40,13 @@ function App() {
     <div className="App">
       <AppBar />
       <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home data={newData} />} />
       <Route path="aboutus" element={<AboutUs />} />
       <Route path="contactus" element={<ContactUs />} />
       <Route path="addservice" element={<AddService getData={getDataHandler} />} />
     </Routes>
       {/* <AddService getData={getDataHandler} /> */}
-      <ServiceList data={newData} />
+      {/* <ServiceList data={newData} /> */}
     </div>
   );
 }
